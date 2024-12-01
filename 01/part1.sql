@@ -14,7 +14,7 @@ extracted_second AS (
     SELECT second, ROW_NUMBER() OVER (ORDER BY second ASC) as rn
     FROM extracted
 )
-SELECT SUM(abs(second-first))
+SELECT SUM(abs(second-first)) AS part1
 FROM extracted_first ef
 JOIN extracted_second es
 ON ef.rn = es.rn
