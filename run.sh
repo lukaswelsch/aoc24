@@ -2,5 +2,4 @@
 
 cd 01
 
-duckdb < part1.sql
-duckdb < part2.sql
+duckdb < day1.sql

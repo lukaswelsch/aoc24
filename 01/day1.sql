@@ -17,7 +17,16 @@ extracted_second AS (
     SELECT second, ROW_NUMBER() OVER (ORDER BY second ASC) as rn
     FROM extracted
 )
-SELECT SUM(abs(second-first)) AS part1
+-- part1:
+SELECT SUM(abs(second-first)) AS result, 'part1' AS info
 FROM extracted_first ef
 JOIN extracted_second es
 ON ef.rn = es.rn
+
+UNION ALL
+
+-- part2:
+SELECT SUM(ef.first) AS result, 'part2' AS info
+FROM extracted ef
+JOIN extracted es
+ON ef.first = es.second
