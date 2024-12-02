@@ -1,6 +1,8 @@
 #!/bin/zsh
 
-cd 02
-
+cd 01
 duckdb < day1.sql
+cd ..
+
+cd 02
 duckdb < day2.sql
