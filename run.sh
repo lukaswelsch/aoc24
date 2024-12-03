@@ -6,3 +6,9 @@ cd ..
 
 cd 02
 duckdb < day2.sql
+cd ..
+
+cd 03
+duckdb < day3.sql
+cd ..
+
