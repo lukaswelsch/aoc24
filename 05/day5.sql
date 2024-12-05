@@ -88,11 +88,11 @@ row_order AS (
 
 SELECT
     sum(middle_element) AS result,
-    'part2' AS info
+    'part1' AS info
 FROM result
 UNION ALL
 SELECT
     sum(page) AS result,
-    'part1' AS info
+    'part2' AS info
 FROM row_order
 WHERE row_id = middle_element
