@@ -101,4 +101,7 @@ all_directions AS (
 
 )
 
-SELECT count(*) FROM all_directions
+SELECT
+    'part2' AS info,
+    count(*) AS result
+FROM all_directions

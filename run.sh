@@ -13,6 +13,7 @@ duckdb < day3.sql
 cd ..
 
 cd 04
+duckdb < day4.sql
 duckdb < day4_2.sql
 cd ..
 

@@ -137,5 +137,8 @@ all_directions AS (
 )
 
 -- SELECT COUNT(*), direction AS total_occurrences FROM all_directions GROUP BY direction;
-SELECT count(*) FROM all_directions
+SELECT
+    'part1' AS info,
+    count(*) AS result
+FROM all_directions
 -- SELECT * FROM word_search

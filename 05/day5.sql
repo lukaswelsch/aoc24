@@ -86,5 +86,13 @@ row_order AS (
     FROM page_priorities
 )
 
-SELECT sum(page) FROM row_order
+SELECT
+    sum(middle_element) AS result,
+    'part2' AS info
+FROM result
+UNION ALL
+SELECT
+    sum(page) AS result,
+    'part1' AS info
+FROM row_order
 WHERE row_id = middle_element
