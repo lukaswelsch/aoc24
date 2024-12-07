@@ -20,3 +20,11 @@ cd ..
 cd 05
 duckdb < day5.sql
 cd ..
+
+cd 06
+duckdb < day6.sql
+cd ..
+
+cd 07
+duckdb < day7.sql
+cd ..
