@@ -29,6 +29,10 @@
 #duckdb < day7.sql
 #cd ..
 
-cd 08
-duckdb < day8.sql
+#cd 08
+#duckdb < day8.sql
+#cd ..
+
+cd 10
+duckdb < day10.sql
 cd ..

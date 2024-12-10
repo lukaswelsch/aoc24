@@ -47,7 +47,3 @@ all_antinodes AS (
 )
 SELECT *
 FROM all_antinodes
--- 313 not correct , too low
--- 324 too low
--- 360 wrong
--- 514 too high
