@@ -7,7 +7,7 @@ WITH day11 AS (
 unnested AS (
     SELECT
         unnest(arr)::INT128 as value,
-        1::INT128 AS count
+        1::INT128 AS count -- perform the iteration uniquely, because we don't care about the order
     FROM day11
 ),
 
@@ -23,7 +23,7 @@ arrangement AS (
         SELECT
             iteration + 1,
             new_value,
-            SUM(new_count) AS total_count
+            SUM(new_count) AS total_count -- all at once
         FROM (
             SELECT
                 iteration,
